@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/components.js"></script>
+        <script src="js/behaviour.js"></script>
+        <script src="js/objects.js"></script>
+        <style>
+            body{
+                position: absolute;
+
+                left: 0px;
+                top: 0px;
+
+                width: 100vw;
+                height: 100vh;
+
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+
+                background-color: #000000;
+
+                font-family: "Arial";
+            }
+
+            html{
+                --size: min(100vh, 100vw);
+            }
+
+            #projectViewer{
+                position: absolute;
+
+                left: calc(
+                    (100vw - var(--size)) / 2
+                );
+                top: calc(
+                    (100vh - var(--size)) / 2
+                );
+
+                width: var(--size);
+                height: var(--size);
+
+                background-color: #808080;
+            }
+
+            #mouseX{
+                position: absolute;
+
+                left: 5vh;
+                top: 5vh;
+            }
+
+            #mouseY{
+                position: absolute;
+
+                left: 5vh;
+                top: 12vh;
+            }
+
+            .displayFrame{
+                position: absolute;
+
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+
+                background-color: #FFFFFF;
+
+                width: 12vh;
+                height: 5vh;
+            }
+
+            .alphaDisplay{
+                position: absolute;
+
+                left: 5vh;
+                top: 1vh;
+
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+
+                width: 6vh;
+                height: 3vh;
+
+                background-color: transparent;
+
+                font-size: 3vh;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="projectViewer" width="1000" height="1000">
+            If you're seeing this message, your browser does not support canvas technology.
+            Please, use Firefox (>12), Opera (>9) Chrome(>1), Safari(>2) or Edge (>12).
+            Any browser using the engines of the above mentioned browsers should also be supported.
+        </canvas>
+    </body>
+    <script>
+        // *** VARIABLES  *** //
+
+        var projectViewer = document.getElementById("projectViewer");
+        var button1Clicked = 0;
+        var clickPos = [0, 0];
+        var event = "none";
+
+        // *** EVENTS *** //
+        // Call main function o startup
+        window.onload= function(e){
+            //console.clear();
+            event = ["load", -1, -1];
+            console.log("loading...");
+            main(event);
+        };
+
+        // Reload main function when resized
+        window.onresize = function(e){
+            //console.clear();
+            event = ["load", -1, -1];
+            console.log("reloading...");
+            main(event);
+        };
+
+        // Listen to clicks within screen
+        projectViewer.onmousedown = function(e){
+            //console.clear();
+            event = ["mousedown", e.clientX, e.clientY];
+            main(event);
+        };
+
+        // Listen to clicks within screen
+        projectViewer.onmouseup = function(e){
+            //console.clear();
+            event = ["mouseup", e.clientX, e.clientY];
+            main(event);
+        };
+
+        // *** MAIN FUNCTION *** //
+        function main(event){
+         
+            // Initialize application
+            clearCanvas("projectViewer");
+
+            // Assign object's I/O
+            button1.output = button1.clickMe("projectViewer", event);                                                // there should be a function to scan the database and check the acutal data
+            button1.input = button1.status;                                                                             // Just passthrough
+
+            button2.output = button2.clickMe("projectViewer", event);
+            button2.input = button2.output;
+
+            button3.output = button3.clickMe("projectViewer", event);
+            button3.input = button3.output;
+
+            // *** PRINT ALL OBJECTS IN THE SCREEN) *** /
+            button1.drawMe("projectViewer");
+            button2.drawMe("projectViewer");
+            button3.drawMe("projectViewer");
+
+            // Update coordinates
+            clickPos = getClickPositon("projectViewer", event);
+
+            // Write into data base
+            // Not implemented yet
+        }
+    </script>
+    <script type="text\javascript" src="./behaviour.js"></script>
+</html>

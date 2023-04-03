@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
+	<body>
+		<!--div class="container">
+			<h1>S7 1200 Data Exchanger</h1>
+			<ul>
+				<button id="cmdON">ON</button>
+				<button id="cmdOFF">OFF</button>
+				<br>
+				<div id="LED1" class="ïndicator"></div>
+				<br>
+				<button id="startMonitoring">Start monitoring</button>
+				<button id="stopMonitoring">Stop monitoring</button>
+				<br>
+				<button id="clear">Clear console</button>
+			</ul>
+			<ul>
+				<li>Q0.0</li>
+			</ul>
+				<canvas id="SCADA1" length="95%" height="95%" backgroundcolor="#202020">
+			</canvas>
+		</div-->
+		<header>
+			<button onclick="window.location.href = 'componentviewer.htm';"> Component viewer </button>
+			<button onclick="window.location.href = 'editor.htm';"> Editor </button>
+			<button onclick="window.location.href = 'projectviewer.htm';"> Project viewer </button>
+		</header>
+		<div id="leftpanel">
+			<img id="icon1" src="img/code.svg">
+			<embed id="embeddedEditor" src="./editor.htm">
+			<!--button id="resize"></button-->
+		</div>
+		<div id="preview">
+			<embed id="embeddedComponentviewer" src="./componentviewer.htm">
+		</div>
+		<!--script src="js/script.js"></script-->
+	</body>
+	<script>
+		var preview = document.getElementById("preview");
+		var leftpanel = document.getElementById("leftpanel");
+
+		/*leftpanel.onmouseover = function(){
+			leftpanel.style.backgroundColor = "#FFFF00"
+		}
+		leftpanel.onmouseleave = function(){
+			leftpanel.style.backgroundColor = "#FF0000"
+		}
+
+		leftpanel.onmousedown = function(e){
+			let leftpanelWidth_current = leftpanel.offsetWidth;
+			let previewWidth_current = preview.offsetWidth;
+
+			let totalWidth = leftpanelWidth_current + previewWidth_current;
+
+			let leftpanelWidth_new = 0;
+			let previewWidth_new = 0;
+
+			leftpanel.style.Width = String(newwidth) + "px";
+		}*/
+
+		leftpanel.onmouseup = function(e){
+			//do something
+		}
+
+	</script>
+</html>

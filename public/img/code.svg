@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 60 80"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="code.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="0.55244701"
+     inkscape:cx="36.202567"
+     inkscape:cy="684.22852"
+     inkscape:window-width="1856"
+     inkscape:window-height="1057"
+     inkscape:window-x="56"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer6" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1175"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1173" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="PageFrame"
+     style="display:inline;stroke:none">
+    <path
+       id="rect504"
+       style="display:inline;fill:#0f0f0f;fill-opacity:1;stroke:none;stroke-width:0.187369"
+       d="M 0,-2.4285693 V 77.571713 H 59.999953 V 7.5713375 l -9.9999,-9.9999068 z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="PageFill"
+     style="display:inline">
+    <path
+       id="rect504-3"
+       style="fill:#f0f0f0;fill-opacity:1;stroke:none;stroke-width:0.175951"
+       d="M 1.994291,-0.43427825 V 75.389771 H 57.81834 V 9.0436065 l -9.303923,-9.47788475 z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="BlueContent">
+    <rect
+       style="fill:#4000e0;fill-opacity:1;stroke-width:0.270777"
+       id="blue7"
+       width="25"
+       height="4"
+       x="27.906315"
+       y="53.477745" />
+    <rect
+       style="fill:#4000e0;fill-opacity:1;stroke-width:0.209743"
+       id="blue6"
+       width="15"
+       height="4"
+       x="4.9063148"
+       y="53.477745" />
+    <rect
+       style="fill:#4000e0;fill-opacity:1;stroke-width:0.270777"
+       id="blue5"
+       width="25"
+       height="4"
+       x="27.906315"
+       y="43.477745" />
+    <rect
+       style="fill:#4000e0;fill-opacity:1;stroke-width:0.209743"
+       id="blue4"
+       width="15"
+       height="4"
+       x="37.906319"
+       y="33.477745" />
+    <rect
+       style="fill:#4000e0;fill-opacity:1;stroke-width:0.270777"
+       id="blue3"
+       width="25"
+       height="4"
+       x="4.9063148"
+       y="33.477745" />
+    <rect
+       style="fill:#4000e0;fill-opacity:1;stroke-width:0.270777"
+       id="blue2"
+       width="25"
+       height="4"
+       x="4.9063148"
+       y="23.477747" />
+    <rect
+       style="fill:#4000e0;fill-opacity:1;stroke-width:0.270777"
+       id="blue1"
+       width="25"
+       height="4"
+       x="21.906315"
+       y="13.477746" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="GreenContent">
+    <rect
+       style="fill:#00e040;fill-opacity:1;stroke-width:0.2345"
+       id="green_4"
+       width="15"
+       height="5"
+       x="10.906315"
+       y="62.477741" />
+    <rect
+       style="fill:#00e040;fill-opacity:1;stroke-width:0.2345"
+       id="green3"
+       width="15"
+       height="5"
+       x="4.9063148"
+       y="42.477745" />
+    <rect
+       style="fill:#00e040;fill-opacity:1;stroke-width:0.2345"
+       id="green2"
+       width="15"
+       height="5"
+       x="31.906317"
+       y="22.477747" />
+    <rect
+       style="fill:#00e040;fill-opacity:1;stroke-width:0.2345"
+       id="green1"
+       width="15"
+       height="5"
+       x="4.9063148"
+       y="12.477746" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="RedContent">
+    <rect
+       style="fill:#ff00e0;fill-opacity:1;stroke-width:0.108311"
+       id="red6"
+       width="4"
+       height="4"
+       x="4.9063148"
+       y="63.477741" />
+    <rect
+       style="fill:#ff00e0;fill-opacity:1;stroke-width:0.108311"
+       id="red5"
+       width="4"
+       height="4"
+       x="21.906315"
+       y="53.477745" />
+    <rect
+       style="fill:#ff00e0;fill-opacity:1;stroke-width:0.108311"
+       id="red4"
+       width="4"
+       height="4"
+       x="21.906315"
+       y="43.477745" />
+    <rect
+       style="fill:#ff00e0;fill-opacity:1;stroke-width:0.108311"
+       id="red3"
+       width="4"
+       height="4"
+       x="31.906317"
+       y="33.477745" />
+    <rect
+       style="fill:#ff00e0;fill-opacity:1;stroke-width:0.108311"
+       id="red2"
+       width="4"
+       height="4"
+       x="48.906319"
+       y="23.477747" />
+    <rect
+       style="fill:#ff00e0;fill-opacity:1;stroke-width:0.108311"
+       id="red1"
+       width="4"
+       height="4"
+       x="48.906319"
+       y="13.477746" />
+  </g>
+</svg>

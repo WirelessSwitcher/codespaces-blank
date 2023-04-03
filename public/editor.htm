@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/editor.css">
+	</head>
+	<body>
+        <!--div id="dropdown">
+            there's something here.
+        </div-->
+        <textarea id="applicationEditor" type="text">//*** Add your code here ***//</textarea>
+        <footer>
+            <button id="retrieve"> Retrieve </button>
+            <button id="submit"> Submit </button>
+        </footer>
+	</body>
+    <script>
+
+        /* This is for the future, to add a "project tree" drop down menu.
+        
+        var dropdown = document.getElementById("dropdown");
+        console.log(dropdown.innerHTML);*/
+
+        /*** INITIALIZE VARIABLES ***/
+        var xhttp = new XMLHttpRequest();
+        var inputText = document.getElementById("applicationEditor");
+        var retrieve = document.getElementById("retrieve");
+        var submit = document.getElementById("submit");
+
+        /*** DECLARE FUNCTIONS ***/
+        window.onload = function(){
+            getCode();
+            
+            /*var s=[];
+            for(let i=0; i<5; i++){
+                s.push("testing\n");
+            }
+            dropdown.offsetWidth = "100vw";
+            dropdown.offsetHeight = "5vh";
+            dropdown.style.backgroundColor = "#00FF00";
+            dropdown.innerHTML = s;*/
+        }
+
+        // Retrieve code from server
+        retrieve.onmousedown = function(){
+            getCode();
+        }
+
+        // Send code to server
+        submit.onmousedown = function(){
+            sendCode(); 
+        }
+
+        submit.onmouseup = function(){
+            getCode();
+        }
+
+        function getCode(){
+            xhttp.onreadystatechange = function(){
+                if (this.readyState == 4 && this.status == 200){
+                    inputText.value = this.responseText;
+                }
+            }
+            // xhttp.open("GET", "./data/" +  code.name + ".js", true);
+            xhttp.open("GET", "./data/script.js", true);
+            xhttp.send();
+        }
+
+        function sendCode(){
+            // Convert the data into JSON  
+            let data = {"code":inputText.value};
+            let code = JSON.stringify(data);
+
+            // Set the message
+            xhttp.open("POST", "/submitCode");
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send(code);
+
+            // Get response
+            xhttp.onloadend = function(){
+                let response = xhttp.response;
+                //console.log("This is the response received from server: " + String(response));
+            }
+        }
+
+        function getPath(){
+            // To do.
+        }
+
+        function addScript(){
+            // To do.
+        }
+
+        function deleteScript(){
+            // To do.
+        }
+    </script>
+</html>

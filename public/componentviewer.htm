@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/componentviewer.css">
+        <script src="js/components.js"></script>
+        <script src="js/behaviour.js"></script>
+    </head>
+    <body>
+        <!--div id="display"-->
+            <canvas id="componentViewer" width="1920" height="1080">
+                If you're seeing this message, your browser does not support canvas technology.
+                Please, use Firefox (>12), Opera (>9) Chrome(>1), Safari(>2) or Edge (>12).
+                Any browser using the engines of the above mentioned browsers should also be supported.
+            </canvas>
+        <!--/div-->
+        <footer>
+            <button id="loadButton">Load</button>
+            <div id="mouseXvalue">0</div>
+            <div id="mouseYvalue">0</div>
+        </footer>
+    </body>
+    <script>
+        //var xhttp = new XMLHttpRequest();
+
+        // *** VARIABLES  *** //
+        var componentViewer = document.getElementById("componentViewer");
+        var loadButton = document.getElementById("loadButton");
+        var mouseXvalue = document.getElementById("mouseXvalue");
+        var mouseYvalue = document.getElementById("mouseYvalue");
+        var button1Clicked = 0;
+        var clickPos = [0, 0];
+        var event = "none";
+
+        var loadButton = document.getElementById("loadButton");
+
+        // *** EVENTS *** //
+        // Call main function o startup
+        window.onload = function(e){
+            //console.clear();
+            event = ["load", -1, -1];
+            console.log("loading...");
+            main(event);
+            backgroundTasks(event);
+        };
+
+        // Reload main function when resized
+        window.onresize = function(e){
+            //console.clear();
+            event = ["load", -1, -1];
+            console.log("reloading...");
+            main(event);
+            backgroundTasks(event);
+        };
+
+        // Listen to clicks within screen
+        componentViewer.onmousedown = function(e){
+            //console.clear();
+            event = ["mousedown", e.clientX, e.clientY];
+            main(event);
+            backgroundTasks(event);
+        };
+
+        // Listen to clicks within screen
+        componentViewer.onmouseup = function(e){
+            //console.clear();
+            event = ["mouseup", e.clientX, e.clientY];
+            main(event);
+            backgroundTasks(event);
+        };
+
+        loadButton.onmousedown = function(e){
+            window.location.reload()
+        }
+
+        function backgroundTasks(event){
+            eventId = event[0];
+            eventX = event[1];
+            eventY = event[2];
+
+            updateCoordinates(eventX, eventY);
+        }
+
+        function updateCoordinates(x, y){
+            mouseXvalue.innerHTML = x;
+            mouseYvalue.innerHTML = y;
+        }
+
+        function retrieveSCreen(){
+            
+        }
+
+    </script>
+    <script type="text\javascript" src="./behaviour.js"></script>
+    <script src="data/script.js"></script>
+</html>

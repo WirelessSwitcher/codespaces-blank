@@ -1,0 +1,157 @@
+html{
+    --left-panel-witdh: 3VW;
+    --icon-size: calc(var(--left-panel-witdh) * 0.8);
+    --icon-padding: calc(var(--left-panel-witdh) * 0.1);
+    --line-width: calc(var(--icon-size) - 2 * var(--icon-padding));
+
+    --colour1: #A0A0A0;
+    --colour2: #808080;
+    --colour3: #000000;
+    --highlight: #f0f0f0;
+    
+}
+
+body{
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    background-color: #A0A0A0;
+
+    font-family: "Arial";
+}
+
+header{
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+
+    width: 100vw;
+    height: 3vh;
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    line-height: 3vh;
+
+    background-color: #A0A0A0;
+
+    font-family: "Arial";
+}
+
+#leftpanel{
+    position: absolute;
+
+    left: 0px;
+    top: 3vh;
+
+    width: var(--left-panel-witdh);
+    height: 97vh;
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    background-color: #808080; /*#FF0000;*/
+
+    font-family: "Arial";
+    /*cursor: e-resize;*/
+}
+
+#menu{
+    position: absolute;
+
+    left: var(--icon-padding);
+    top: var(--icon-padding);
+
+    width: var(--icon-size);
+    height: var(--icon-size);
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-radius: var(--icon-padding);
+
+    background-color: #000000;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#icon{
+    width: 3vh;
+    height: 3vh;
+}
+
+#preview{
+    position: absolute;
+
+    left:30vw;
+    top: 10vh;
+
+    width: 70vw;
+    height: 90vh;
+
+    resize: both;
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    background-color: #FFFFFF;
+
+    font-family: "Arial";
+}
+
+#embeddedEditor{
+    position: relative;
+
+    left: 0.5vw;
+    top: 0px;
+
+    width: 29vw;
+    height: inherit;
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    background-color: #808080;
+
+    font-family: "Arial";
+}
+
+#embeddedComponentviewer{
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+
+    width: 70vw;
+    height: 90vh;
+
+    resize: both;
+    overflow: both;
+
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    /*background-color: #808080;*/
+
+    font-family: "Arial";
+
+}
